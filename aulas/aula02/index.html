@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,15 @@
         <br><br>
         <input type="number" name="idade" id="idade" placeholder="DIgite a sua idade" required>
         <br><br>
+        <label for="admissao">Admissão</label>
+        <br><br>
         <input type="date" name="admissao" id="admissao" required>
+        <br><br>
+        <label for="demissao">Demissão</label>
         <br><br>
         <input type="date" name="demissao" id="demissao">
         <br><br>
-        <button type="button" onclick="adicionarLinha()">Adicionar</button>
+        <button type="button" onclick= "adicionarLinha()">Adicionar</button>
     </form>
     <br><br>
     <table id="tabelaDados">
@@ -32,6 +36,8 @@
                 <th>Demissao</th>
             </tr>
         </thead>
+        <tbody>
+        </tbody>
     </table>
 </body>
 </html>
