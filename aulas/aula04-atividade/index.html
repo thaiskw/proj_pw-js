@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Aula04</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario.js"></script>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <hr>
+    <form id="linhaForm">
+        <br>
+        <label for="produto">Selecione um produto:</label>
+        <br>
+        <select name="produto" id="produto" required>
+            <option value="corretivo">corretivo</option>
+            <option value="blush">blush</option>
+            <option value="microondas">microondas</option>
+            <option value="liquidificador">liquidificador</option>
+        </select>
+        <br><br>
+        <label for="produto">Selecione uma marca:</label>
+        <br>
+        <select name="marca" id="marca" required>
+            <option value="Sheglam">Sheglam</option>
+            <option value="Mari Maria">Mari Maria</option>
+            <option value="Eletrolux">Eletrolux</option>
+            <option value="Philco">Philco</option>
+        </select>
+        <br><br>
+        <label for="segmento">Selecione um segmento:</label>
+        <br>
+        <select name="segmento" id="segmento" required>
+            <option value="Eletrodomésticos">Eletrodomésticos</option>
+            <option value="Beleza">Beleza</option>
+        </select>
+        <br><br>
+        <label for="valor">Selecione o valor do produto:</label>
+        <br>
+        <input type="number" name="valor" id="valor" placeholder="escolha o valor" required>
+        <br><br>
+        <label for="data-venda">Selecione a data da venda:</label>
+        <br><br>
+        <input type="date" name="data-venda" id="data-venda" required>
+        <br><br>
+        <button type="button" onclick= "adicionarLinha()">Cadastrar</button>
+    </form>
+    <br><br>
+    <table id="tabelaDados">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Produto</th>
+                <th>Marca</th>
+                <th>Segmento</th>
+                <th>Valor</th>
+                <th>Data da venda</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
