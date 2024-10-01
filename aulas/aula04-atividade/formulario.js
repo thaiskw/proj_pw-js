@@ -34,6 +34,6 @@ function adicionarLinha() {
     // Incrementa o contador de IDs
     idCounter++;
 
-    // Limpa os campos do formulário
+    // Limpa os campos do formulário todo
     document.getElementById('linhaForm').reset();
 }
