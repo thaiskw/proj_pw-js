@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 class="text-center sucess">Formulário em JavaScript</h1>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form id="linhaForm">
+                    <div class="mb-3">
+                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="number" name="idade" id="idade" placeholder="DIgite sua idade"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-control" for="admissao">Admissão</label>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="date" name="admissao" id="admissao" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-control" for="demissao">Demissão</label>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="date" name="demissao" id="demissao">
+                    </div>
+                    <button class="btn btn-primary" type="button" onclick="adicionarLinha()">Adicionar</button>
+                </form>
+            </div>
+            <div class="col-8">
+                <table class="table table-striped" id="tabelaDados">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Admissão</th>
+                            <th>Demissão</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
