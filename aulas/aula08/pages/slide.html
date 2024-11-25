@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+  </script>
+  <style>
+    #flip {
+      padding: 10px;
+      text-align: center;
+      background-color: #ffb0e1;
+      color: black;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 250px;
+      margin: 20px auto;
+    }
+
+    #panel {
+      padding: 20px;
+      background-color: #ffb0e1;
+      border: solid 1px #ffffff;
+      display: none;
+      border-radius: 5px;
+      width: 250px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="flip">Clique aqui!</div>
+
+  <div id="panel">
+    <p>SANRIO :)</p>
+    <p>A Sanrio é uma famosa empresa japonesa, conhecida mundialmente por criar personagens icônicos e produtos licenciados, com destaque para Hello Kitty, sua mascote mais famosa. Fundada em 1960 por Shintaro Tsuji, a Sanrio começou como uma pequena loja de cartões de felicitações, mas logo se expandiu para a criação de personagens que se tornaram parte importante da cultura pop.
+
+        O maior sucesso da Sanrio foi Hello Kitty, criada em 1974, que rapidamente se tornou um ícone global. A personagem, uma gatinha sem boca, é adorada por sua simplicidade e fofura, sendo usada em uma ampla gama de produtos, desde mochilas até produtos de cosméticos e até parques temáticos.
+        
+        Além de Hello Kitty, a Sanrio criou outros personagens populares, como My Melody, Cinnamoroll, Keroppi, Badtz-Maru, e muitos outros, cada um com seu próprio universo e estilo, mas sempre mantendo o foco em apelar para um público que busca fofura e nostalgia. Esses personagens são não apenas protagonistas de mercadorias, mas também aparecem em animações, jogos e até eventos especiais.
+        
+        A filosofia da Sanrio sempre foi transmitir "a felicidade através de pequenos presentes", o que reflete em sua estratégia de licenciamento e em sua abordagem voltada para o consumidor. Hoje, a Sanrio é uma gigante do entretenimento e do mercado de produtos licenciados, com uma presença significativa em várias partes do mundo.
+        
+        A empresa também se expandiu para o ramo dos parques temáticos, como o Sanrio Puroland no Japão, e vem explorando parcerias com marcas ocidentais para aumentar sua visibilidade global.</p>  </div>
+
+</body>
+</html>

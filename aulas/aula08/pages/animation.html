@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+</script> 
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    div {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      left: 0px;  
+    }
+    img {
+      width: 100%;  
+      height: 100%; 
+      object-fit: cover; 
+    }
+  </style>
+</head>
+<body>
+
+<button>Animação</button>
+
+<p>Clique no botão para iniciar uma animação!</p>
+<div><img src="c:\Users\aluno\Pictures\°•⟡ 𝐈𝐂𝐎𝐍𝐒 ⟡•°.jpg"></div>
+
+</body>
+</html>
