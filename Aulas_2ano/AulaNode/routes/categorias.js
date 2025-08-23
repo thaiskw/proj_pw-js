@@ -3,9 +3,16 @@ const router = express.Router();
 
 //listar categoria
 router.get("/", async (req, res)=> {
+    const categorias = [
+        { id: 1, nome: "Programação" },
+        { id: 2, nome: "Design" },
+        { id: 3, nome: "Marketing" }
+    ];
+    
     res.render("base", {
         title: "Listar Categorias",
         view: "categorias/show",
+        items: categorias // <-- aqui manda pro EJS
     });
 });
 

@@ -9,4 +9,11 @@ router.get("/", async (req, res)=> {
     });
 });
 
+router.get("/equipe", (req, res) => {
+    res.render("base", {
+        title: "Equipe",
+        view: "equipe",
+    });
+});
+
 module.exports = router;
